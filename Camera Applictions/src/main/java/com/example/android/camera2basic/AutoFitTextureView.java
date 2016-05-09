@@ -1,10 +1,13 @@
 
 package com.example.android.camera2basic;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.TextureView;
 
+@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class AutoFitTextureView extends TextureView {
 
     private int mRatioWidth = 0;
